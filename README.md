@@ -6,6 +6,10 @@ A simple tic-tac-toe game
 
 React, HTML, CSS
 
+## Live link
+
+https://grad-tic-tac-toe.herokuapp.com/
+
 
 ## Mobile view
 
