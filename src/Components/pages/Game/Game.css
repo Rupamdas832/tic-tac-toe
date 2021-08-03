@@ -5,6 +5,10 @@
   justify-content: center;
   height: 100vh;
 }
+.turn {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
 
 .matrix-box {
   display: grid;

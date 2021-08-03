@@ -7,8 +7,7 @@ import { Button } from "../../buttons/Button";
 export const Game = () => {
   const { side } = useParams();
   const [array, setArray] = useState(new Array(9).fill("empty"));
-  const [isFirstMove, setIsFirstMove] = useState(true);
-  const [isCross, setIsCross] = useState(false);
+  const [isCross, setIsCross] = useState(side === "X" ? true : false);
   const [winMessage, setWinMessage] = useState("");
 
   const checkWinner = () => {
@@ -69,21 +68,14 @@ export const Game = () => {
 
   const reloadGame = () => {
     setArray(new Array(9).fill("empty"));
-    setIsFirstMove(true);
-    setIsCross(false);
+    setIsCross(side === "X" ? true : false);
     setWinMessage("");
   };
 
   const changeItem = (itemNumber) => {
     if (array[itemNumber] === "empty") {
-      if (isFirstMove) {
-        array[itemNumber] = side;
-        setIsCross(side === "X" ? false : true);
-        setIsFirstMove(false);
-      } else {
-        array[itemNumber] = isCross ? "X" : "O";
-        setIsCross(!isCross);
-      }
+      array[itemNumber] = isCross ? "X" : "O";
+      setIsCross(!isCross);
     } else {
       alert("Already filled");
     }
@@ -96,6 +88,19 @@ export const Game = () => {
   return (
     <div className="game">
       <div className="nav-div">
+        {winMessage === "" ? (
+          isCross ? (
+            <p>
+              <span className="turn">Cross's </span>turn
+            </p>
+          ) : (
+            <p>
+              <span className="turn">Circle's</span> turn
+            </p>
+          )
+        ) : (
+          ""
+        )}
         {winMessage && (
           <div className="nav-btns">
             <button onClick={reloadGame} className="btn">
