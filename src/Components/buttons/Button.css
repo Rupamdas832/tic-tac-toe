@@ -1,0 +1,15 @@
+.btn {
+  background: none;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  box-shadow: 1px 1px 5px rgba(44, 44, 44, 0.377);
+  margin: 1rem;
+  font-size: 1.3rem;
+}
+
+.btn:hover {
+  background-color: var(--Blue);
+  color: var(--White);
+}

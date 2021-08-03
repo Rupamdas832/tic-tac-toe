@@ -1,0 +1,41 @@
+.play-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.play-side h3 {
+  font-size: 1.5rem;
+}
+
+.play-side-choose-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100vw;
+}
+.play-side-choose-div li {
+  list-style: none;
+}
+.choose-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem;
+}
+.choose-side:hover {
+  cursor: pointer;
+}
+
+.choose-side img {
+  width: 20rem;
+  height: 20rem;
+}
+@media only screen and (max-width: 450px) {
+  .choose-side img {
+    width: 8rem;
+    height: 8rem;
+  }
+}
