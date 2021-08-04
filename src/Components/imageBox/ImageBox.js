@@ -5,10 +5,10 @@ import Image3 from "../assets/o.jpeg";
 
 export const ImageBox = ({ type }) => {
   if (type === "empty") {
-    return <img src={empty} />;
+    return <img src={empty} alt="empty" />;
   } else if (type === "O") {
-    return <img src={Image3} />;
+    return <img src={Image3} alt="O" />;
   } else {
-    return <img src={Image2} />;
+    return <img src={Image2} alt="X" />;
   }
 };

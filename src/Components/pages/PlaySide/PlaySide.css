@@ -39,3 +39,9 @@
     height: 8rem;
   }
 }
+@media only screen and (max-width: 450px) {
+  .choose-side img {
+    width: 6rem;
+    height: 6rem;
+  }
+}

@@ -11,7 +11,7 @@ const App = () => {
         <Routes>
           <Route path="/" exact element={<PlayMode />} />
           <Route path="/mode" element={<PlaySide />} />
-          <Route path="/game/:side" element={<Game />} />
+          <Route path="/game" element={<Game />} />
         </Routes>
       </BrowserRouter>
     </div>
