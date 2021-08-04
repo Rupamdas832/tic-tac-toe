@@ -96,7 +96,6 @@ export const Game = () => {
 
   const reloadGame = () => {
     setArray(new Array(9).fill("empty"));
-    setIsCross(state.side === "X" ? true : false);
     setWinMessage("");
   };
 
