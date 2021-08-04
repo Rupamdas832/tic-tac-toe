@@ -13,9 +13,9 @@ https://grad-tic-tac-toe.herokuapp.com/
 
 ## Mobile view
 
-![Mobile-view-tic-tac-toe](https://user-images.githubusercontent.com/64453669/128088070-5ca812c1-069a-4ed6-bd85-b680b53e41ff.jpg)
+![Mobile-view-tic-tac-toe1](https://user-images.githubusercontent.com/64453669/128128118-e9a95ecf-729b-43ed-9e8a-75666abbaf7e.jpg)
+
 
 ## PC view
 
-![PC-view-tic-tac-toe](https://user-images.githubusercontent.com/64453669/128088132-c057315e-c4df-4293-a3d1-d0864a1fbcca.jpg)
-
+![PC-view-tic-tac-toe1](https://user-images.githubusercontent.com/64453669/128128142-a67b6a5a-67eb-4d81-81a2-bed81e6aef87.jpg)
